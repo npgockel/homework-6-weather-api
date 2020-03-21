@@ -10,7 +10,7 @@ $("#search").on("click", function() {
       url: url
     }).then(function(response) {
       console.log(response);
-      $("#search-history").prepend("<p>response.name</p>")
+      $("#search-history").prepend(response.name)
     });
   });
 
